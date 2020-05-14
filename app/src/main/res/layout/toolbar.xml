@@ -1,0 +1,76 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/tb"
+    android:layout_width="match_parent"
+    android:layout_height="83dp"
+    android:background="@color/white"
+    android:visibility="gone"
+    tools:visibility="visible">
+
+    <ImageView
+        android:id="@+id/ivSideBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="@dimen/margin_24dp"
+        android:contentDescription="@string/app_name"
+        android:onClick="onDrawerClicked"
+        android:src="@drawable/ic_drawer_t" />
+
+    <ImageView
+        android:id="@+id/ivBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="@dimen/margin_24dp"
+        android:contentDescription="@string/app_name"
+        android:onClick="onBackClicked"
+        android:src="@drawable/ic_back"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tvToolbarTitle"
+        style="@style/AppText_Regular"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_toStartOf="@id/ivSideBar"
+        android:layout_toEndOf="@id/ivSearch"
+        android:text="@string/home"
+        android:textAlignment="center"
+        android:textSize="18sp" />
+
+    <ImageView
+        android:id="@+id/ivSearch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="@dimen/margin_24dp"
+        android:layout_marginTop="@dimen/margin_16dp"
+        android:contentDescription="@string/app_name"
+        android:onClick="onSearchClicked"
+        android:src="@drawable/ic_search_t" />
+
+    <ImageView
+        android:id="@+id/ivFilter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="@dimen/margin_24dp"
+        android:layout_marginTop="@dimen/margin_16dp"
+        android:contentDescription="@string/app_name"
+        android:onClick="onSearchFilterClicked"
+        android:src="@drawable/ic_filter"
+        android:visibility="gone" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_below="@id/tvToolbarTitle"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="@dimen/size_20dp"
+        android:background="@color/app_light_gray" />
+</RelativeLayout>

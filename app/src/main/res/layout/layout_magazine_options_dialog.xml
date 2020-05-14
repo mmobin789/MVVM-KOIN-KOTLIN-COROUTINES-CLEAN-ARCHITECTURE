@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/white_rating_bg"
+    android:layoutDirection="rtl">
+
+    <ImageView
+        android:id="@+id/ivBack2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_24dp"
+        android:layout_marginEnd="@dimen/margin_24dp"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/ic_cross"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvLabel1"
+        style="@style/AppText_Medium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/size_21dp"
+        android:layout_marginTop="@dimen/margin_16dp"
+        android:text="@string/more_options"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvDownload"
+        style="@style/AppText_Accent_Regular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/size_21dp"
+        android:layout_marginTop="@dimen/margin_22dp"
+        android:drawableStart="@drawable/ic_download_options"
+        android:drawablePadding="14dp"
+        android:text="@string/download"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvLabel1" />
+
+
+    <TextView
+        android:id="@+id/tvIssueNo"
+        style="@style/AppText_Accent_Regular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/size_21dp"
+        android:layout_marginTop="@dimen/margin_16dp"
+        android:drawableStart="@drawable/ic_magazine_options"
+        android:drawablePadding="14dp"
+        android:text="@string/read_the_number"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvDownload" />
+
+    <TextView
+        android:id="@+id/tvShare"
+        style="@style/AppText_Accent_Regular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/size_21dp"
+        android:layout_marginTop="@dimen/margin_16dp"
+        android:drawableStart="@drawable/ic_share_options"
+        android:drawablePadding="14dp"
+        android:text="@string/share_online"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvIssueNo" />
+
+    <TextView
+        android:id="@+id/tvSubject"
+        style="@style/AppText_Accent_Regular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/size_21dp"
+        android:layout_marginTop="@dimen/margin_16dp"
+        android:layout_marginBottom="@dimen/margin_16dp"
+        android:drawableStart="@drawable/ic_star_options"
+        android:drawablePadding="14dp"
+        android:text="@string/subject_evaluation"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvShare" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

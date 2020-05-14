@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:layoutDirection="rtl">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/size_21dp"
+        android:layout_marginTop="@dimen/margin_24dp"
+        android:layout_marginEnd="@dimen/size_21dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            style="@style/AppText_Regular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/name"
+            android:textSize="@dimen/text_16sp" />
+
+        <EditText
+            style="@style/AppText_Regular"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#f5f5f5"
+            android:hint="@string/name"
+            android:importantForAutofill="no"
+            android:inputType="textPersonName"
+            android:padding="14dp"
+            android:textColorHint="@color/app_light_gray_1"
+            android:textSize="@dimen/text_16sp" />
+
+        <TextView
+            style="@style/AppText_Regular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/enter_email"
+            android:textSize="@dimen/text_16sp" />
+
+        <EditText
+            style="@style/AppText_Regular"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#f5f5f5"
+            android:hint="@string/enter_email"
+            android:importantForAutofill="no"
+            android:inputType="textEmailAddress"
+            android:padding="14dp"
+            android:textColorHint="@color/app_light_gray_1"
+            android:textSize="@dimen/text_16sp" />
+
+        <TextView
+            style="@style/AppText_Regular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/add_the_comment_to_box"
+            android:textSize="@dimen/text_16sp" />
+
+        <EditText
+            style="@style/AppText_Regular"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#f5f5f5"
+            android:hint="@string/add_the_comment_to_box"
+            android:importantForAutofill="no"
+            android:inputType="none"
+            android:padding="14dp"
+            android:textColorHint="@color/app_light_gray_1"
+            android:textSize="@dimen/text_16sp"
+            tools:text="ونكتفي بهذه الجوانب النقدية للعميد في تناولاته لشعراء زمانه، علماً أن الكتاب تناول شعراء ومفكّرين آخرين منهم: إيليا أبو ماضي، فوزي المعلوف، فكري أباظة، محمود أبو الوفا وغيرهم، ليختم الكتاب بفصل خاص عن نزاهة الأدب والضمير كقضية أخلاقية على الأدباء أن يتحلّوا بهما.ونكتفي بهذه الجوانب النقدية للعميد في تناولاته لشعراء زمانه، علماً أن الكتاب تناول شعراء ومفكّرين آخرين منهم: إيليا أبو ماضي، فوزي المعلوف، فكري أباظة، محمود أبو الوفا وغيرهم، ليختم الكتاب بفصل خاص عن نزاهة الأدب والضمير كقضية أخلاقية على الأدباء أن يتحلّوا بهما." />
+    </LinearLayout>
+
+    <Button
+        style="@style/AppButton_Accent"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/addition"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

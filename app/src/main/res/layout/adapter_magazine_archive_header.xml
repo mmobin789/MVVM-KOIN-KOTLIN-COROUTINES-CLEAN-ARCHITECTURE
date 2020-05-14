@@ -1,0 +1,67 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/margin_22dp"
+    android:layout_marginTop="@dimen/size_21dp"
+    android:layout_marginEnd="@dimen/margin_22dp"
+    android:baselineAligned="false"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/vLine">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/border_1"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/etYear"
+            style="@style/AppText_Regular"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:clickable="false"
+            android:drawableEnd="@drawable/ic_triangle"
+            android:focusable="false"
+            android:hint="@string/choose_the_year"
+            android:importantForAutofill="no"
+            android:inputType="none"
+            android:paddingStart="14dp"
+            android:paddingTop="@dimen/size_5dp"
+            android:paddingEnd="14dp"
+            android:paddingBottom="@dimen/size_5dp"
+            android:textColorHint="@color/app_dark_gray_1"
+            android:textSize="@dimen/text_15sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_8dp"
+        android:layout_weight="1"
+        android:background="@drawable/border_1"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/etMonth"
+            style="@style/AppText_Regular"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:clickable="false"
+            android:drawableEnd="@drawable/ic_triangle"
+            android:focusable="false"
+            android:hint="@string/month"
+            android:importantForAutofill="no"
+            android:inputType="none"
+            android:paddingStart="14dp"
+            android:paddingTop="@dimen/size_5dp"
+            android:paddingEnd="14dp"
+            android:paddingBottom="@dimen/size_5dp"
+            android:textColorHint="@color/app_dark_gray_1"
+            android:textSize="@dimen/text_15sp" />
+    </LinearLayout>
+</LinearLayout>

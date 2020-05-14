@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="أبواب المجلة">
+
+    </item>
+    <item android:title="Item 2"></item>
+    <item android:title="Item 3"></item>
+    <item android:title="Item 4"></item>
+</menu>

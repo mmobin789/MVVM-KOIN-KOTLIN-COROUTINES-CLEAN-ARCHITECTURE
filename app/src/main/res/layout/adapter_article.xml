@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/margin_16dp"
+    android:layout_marginTop="@dimen/margin_16dp"
+    android:layoutDirection="rtl">
+
+    <ImageView
+        android:id="@+id/ivAuthor"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="@dimen/margin_2dp"
+        android:layout_marginEnd="@dimen/margin_8dp"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/ic_ph_author" />
+
+    <TextView
+        android:id="@+id/tvDate"
+        style="@style/AppText_Regular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_12dp"
+        android:layout_toEndOf="@+id/ivAuthor"
+        android:textColor="@color/app_light_gray_1"
+        tool:text="05 May 2020" />
+
+
+    <TextView
+        android:id="@+id/tvTitle"
+        style="@style/AppText_Medium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvDate"
+        android:layout_marginStart="@dimen/margin_12dp"
+        android:layout_marginEnd="@dimen/margin_16dp"
+        android:layout_toStartOf="@id/ivOptions"
+        android:layout_toEndOf="@+id/ivAuthor"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:text="@string/articles_by_authors"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/tvAuthor"
+        style="@style/AppText_Accent_Regular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvTitle"
+        android:layout_marginStart="@dimen/margin_8dp"
+        android:layout_marginEnd="@dimen/margin_8dp"
+        android:layout_toEndOf="@+id/ivAuthor"
+        android:ellipsize="end"
+        android:gravity="bottom"
+        android:maxLines="1"
+        android:text="@string/name"
+        android:textSize="12sp" />
+
+    <Button
+        android:id="@+id/btnArticles"
+        style="@style/AppButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ivAuthor"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="@dimen/margin_24dp"
+        android:text="@string/load_more_author_articles"
+        android:visibility="gone"
+        tool:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/ivOptions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="@dimen/size_20dp"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/ic_options_circle"
+        android:visibility="gone"
+        tool:visibility="gone" />
+</RelativeLayout>
+
+
+

@@ -1,0 +1,552 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:layoutDirection="rtl"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/tb"
+        android:layout_width="match_parent"
+        android:layout_height="83dp"
+        android:layout_marginStart="@dimen/margin_22dp"
+        android:layout_marginEnd="@dimen/margin_22dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/ivSideBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/margin_16dp"
+            android:layout_toEndOf="@id/ivBack"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/ic_drawer_t" />
+
+        <ImageView
+            android:id="@+id/ivBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/ic_back" />
+
+        <TextView
+            android:id="@+id/tvToolbarTitle"
+            style="@style/AppText_Regular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/subscriptions"
+            android:textAlignment="center"
+            android:textSize="18sp" />
+
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/ivLogo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/margin_24dp"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/ic_logo_about_us"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tb" />
+
+            <TextView
+                android:id="@+id/tvLabel1"
+                style="@style/AppText_Regular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_22dp"
+                android:layout_marginTop="@dimen/margin_24dp"
+                android:layout_marginEnd="@dimen/margin_22dp"
+                android:text="@string/request_to_subscribe_magazine"
+                android:textSize="22sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/ivLogo" />
+
+            <TextView
+                android:id="@+id/tvLabel2"
+                style="@style/AppText_Regular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_22dp"
+                android:layout_marginEnd="@dimen/margin_22dp"
+                android:text="@string/fill_form_subscription"
+                android:textColor="@color/app_light_gray_1"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvLabel1" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/margin_24dp"
+                android:background="@color/app_light_gray" />
+
+            <TextView
+                style="@style/AppText_Regular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_22dp"
+                android:layout_marginTop="@dimen/margin_12dp"
+                android:layout_marginEnd="@dimen/margin_22dp"
+                android:text="@string/subtype"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvLabel1" />
+
+            <RadioGroup
+                android:id="@+id/rg1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_22dp"
+                android:layout_marginTop="@dimen/margin_8dp"
+                android:layout_marginEnd="@dimen/margin_22dp"
+                android:orientation="horizontal">
+
+                <com.google.android.material.radiobutton.MaterialRadioButton
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@drawable/radiobutton"
+                    android:checked="true"
+                    android:paddingStart="@dimen/margin_16dp"
+                    android:paddingEnd="@dimen/margin_16dp"
+                    android:text="@string/individual_subscription"
+                    android:textColor="@drawable/radiobutton_text"
+                    android:textSize="18sp" />
+
+                <com.google.android.material.radiobutton.MaterialRadioButton
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@drawable/radiobutton"
+                    android:paddingStart="@dimen/margin_16dp"
+                    android:paddingEnd="@dimen/margin_16dp"
+                    android:text="@string/institution_subscription"
+                    android:textColor="@drawable/radiobutton_text"
+                    android:textSize="18sp" />
+            </RadioGroup>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/margin_24dp"
+                android:background="@color/app_light_gray" />
+
+            <TextView
+                style="@style/AppText_Regular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_22dp"
+                android:layout_marginTop="@dimen/margin_12dp"
+                android:layout_marginEnd="@dimen/margin_22dp"
+                android:text="@string/subtype"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvLabel1" />
+
+            <RadioGroup
+                android:id="@+id/rg2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_22dp"
+                android:layout_marginTop="@dimen/margin_8dp"
+                android:layout_marginEnd="@dimen/margin_22dp"
+                android:orientation="horizontal">
+
+                <com.google.android.material.radiobutton.MaterialRadioButton
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@drawable/radiobutton"
+                    android:paddingStart="@dimen/margin_16dp"
+                    android:paddingEnd="@dimen/margin_16dp"
+                    android:text="@string/one_year"
+                    android:textColor="@drawable/radiobutton_text"
+                    android:textSize="18sp" />
+
+                <com.google.android.material.radiobutton.MaterialRadioButton
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@drawable/radiobutton"
+                    android:checked="true"
+                    android:paddingStart="@dimen/margin_16dp"
+                    android:paddingEnd="@dimen/margin_16dp"
+                    android:text="@string/two_years"
+                    android:textColor="@drawable/radiobutton_text"
+                    android:textSize="18sp" />
+            </RadioGroup>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/margin_24dp"
+                android:background="@color/app_light_gray" />
+
+            <TextView
+                style="@style/AppText_Regular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_22dp"
+                android:layout_marginTop="@dimen/margin_12dp"
+                android:layout_marginEnd="@dimen/margin_22dp"
+                android:text="@string/full_name"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvLabel1" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_22dp"
+                android:layout_marginTop="@dimen/margin_24dp"
+                android:layout_marginEnd="@dimen/margin_22dp"
+                android:baselineAligned="false"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/vLine">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/app_light_gray_4"
+                    android:orientation="vertical">
+
+                    <EditText
+                        style="@style/AppText_Regular"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:hint="@string/first_name"
+                        android:importantForAutofill="no"
+                        android:inputType="none"
+                        android:paddingStart="14dp"
+                        android:paddingTop="@dimen/size_5dp"
+                        android:paddingEnd="14dp"
+                        android:paddingBottom="@dimen/size_5dp"
+                        android:textColorHint="@color/app_light_gray_1"
+                        android:textSize="@dimen/text_16sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_8dp"
+                    android:layout_weight="1"
+                    android:background="@color/app_light_gray_4"
+                    android:orientation="vertical">
+
+                    <EditText
+                        style="@style/AppText_Regular"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:hint="@string/middle_name"
+                        android:importantForAutofill="no"
+                        android:inputType="none"
+                        android:paddingStart="14dp"
+                        android:paddingTop="@dimen/size_5dp"
+                        android:paddingEnd="14dp"
+                        android:paddingBottom="@dimen/size_5dp"
+                        android:textColorHint="@color/app_light_gray_1"
+                        android:textSize="@dimen/text_16sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_22dp"
+                android:layout_marginTop="@dimen/size_21dp"
+                android:layout_marginEnd="@dimen/margin_22dp"
+                android:weightSum="1">
+
+                <EditText
+                    style="@style/AppText_Regular"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:background="@color/app_light_gray_4"
+                    android:hint="@string/last_name"
+                    android:importantForAutofill="no"
+                    android:inputType="none"
+                    android:paddingStart="14dp"
+                    android:paddingTop="@dimen/size_5dp"
+                    android:paddingEnd="14dp"
+                    android:paddingBottom="@dimen/size_5dp"
+                    android:textColorHint="@color/app_dark_gray_1"
+                    android:textSize="@dimen/text_16sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/margin_24dp"
+                android:background="@color/app_light_gray" />
+
+            <TextView
+                style="@style/AppText_Regular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_22dp"
+                android:layout_marginTop="@dimen/margin_12dp"
+                android:layout_marginEnd="@dimen/margin_22dp"
+                android:text="@string/telephone_number"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvLabel1" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_22dp"
+                android:layout_marginTop="@dimen/margin_24dp"
+                android:layout_marginEnd="@dimen/margin_22dp"
+                android:baselineAligned="false"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/vLine">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/app_light_gray_4"
+                    android:orientation="vertical">
+
+                    <EditText
+                        style="@style/AppText_Regular"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:hint="@string/land_line"
+                        android:importantForAutofill="no"
+                        android:inputType="none"
+                        android:paddingStart="14dp"
+                        android:paddingTop="@dimen/size_5dp"
+                        android:paddingEnd="14dp"
+                        android:paddingBottom="@dimen/size_5dp"
+                        android:textColorHint="@color/app_light_gray_1"
+                        android:textSize="@dimen/text_16sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_8dp"
+                    android:layout_weight="1"
+                    android:background="@color/app_light_gray_4"
+                    android:orientation="vertical">
+
+                    <EditText
+                        style="@style/AppText_Regular"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:hint="@string/mobile_phone"
+                        android:importantForAutofill="no"
+                        android:inputType="none"
+                        android:paddingStart="14dp"
+                        android:paddingTop="@dimen/size_5dp"
+                        android:paddingEnd="14dp"
+                        android:paddingBottom="@dimen/size_5dp"
+                        android:textColorHint="@color/app_light_gray_1"
+                        android:textSize="@dimen/text_16sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/margin_24dp"
+                android:background="@color/app_light_gray" />
+
+
+            <TextView
+                style="@style/AppText_Regular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_22dp"
+                android:layout_marginTop="@dimen/margin_12dp"
+                android:layout_marginEnd="@dimen/margin_22dp"
+                android:text="@string/email"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvLabel1" />
+
+
+            <EditText
+                style="@style/AppText_Regular"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_22dp"
+                android:layout_marginTop="@dimen/size_21dp"
+                android:layout_marginEnd="@dimen/margin_22dp"
+                android:background="@color/app_light_gray_4"
+                android:hint="@string/email_message"
+                android:importantForAutofill="no"
+                android:inputType="none"
+                android:paddingStart="14dp"
+                android:paddingTop="@dimen/size_5dp"
+                android:paddingEnd="14dp"
+                android:paddingBottom="@dimen/margin_32dp"
+                android:textColorHint="@color/app_dark_gray_1"
+                android:textSize="@dimen/text_16sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/margin_24dp"
+                android:background="@color/app_light_gray" />
+
+            <TextView
+                style="@style/AppText_Regular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_22dp"
+                android:layout_marginTop="@dimen/margin_12dp"
+                android:layout_marginEnd="@dimen/margin_22dp"
+                android:text="@string/address_1"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvLabel1" />
+
+
+            <EditText
+                style="@style/AppText_Regular"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_22dp"
+                android:layout_marginTop="@dimen/size_21dp"
+                android:layout_marginEnd="@dimen/margin_22dp"
+                android:background="@color/app_light_gray_4"
+                android:hint="@string/email_message"
+                android:importantForAutofill="no"
+                android:inputType="none"
+                android:paddingStart="14dp"
+                android:paddingTop="@dimen/size_5dp"
+                android:paddingEnd="14dp"
+                android:paddingBottom="@dimen/margin_32dp"
+                android:textColorHint="@color/app_dark_gray_1"
+                android:textSize="@dimen/text_16sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/margin_24dp"
+                android:background="@color/app_light_gray" />
+
+            <TextView
+                style="@style/AppText_Regular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_22dp"
+                android:layout_marginTop="@dimen/margin_12dp"
+                android:layout_marginEnd="@dimen/margin_22dp"
+                android:text="@string/address_2"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvLabel1" />
+
+
+            <EditText
+                style="@style/AppText_Regular"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_22dp"
+                android:layout_marginTop="@dimen/size_21dp"
+                android:layout_marginEnd="@dimen/margin_22dp"
+                android:background="@color/app_light_gray_4"
+                android:hint="@string/email_message"
+                android:importantForAutofill="no"
+                android:inputType="none"
+                android:paddingStart="14dp"
+                android:paddingTop="@dimen/size_5dp"
+                android:paddingEnd="14dp"
+                android:paddingBottom="@dimen/margin_32dp"
+                android:textColorHint="@color/app_dark_gray_1"
+                android:textSize="@dimen/text_16sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/margin_24dp"
+                android:background="@color/app_light_gray" />
+
+            <TextView
+                style="@style/AppText_Regular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_22dp"
+                android:layout_marginTop="@dimen/margin_12dp"
+                android:layout_marginEnd="@dimen/margin_22dp"
+                android:text="@string/postal_box"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvLabel1" />
+
+
+            <EditText
+                style="@style/AppText_Regular"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_22dp"
+                android:layout_marginTop="@dimen/size_21dp"
+                android:layout_marginEnd="@dimen/margin_22dp"
+                android:background="@color/app_light_gray_4"
+                android:hint="@string/mail_box"
+                android:importantForAutofill="no"
+                android:inputType="none"
+                android:paddingStart="14dp"
+                android:paddingTop="@dimen/size_5dp"
+                android:paddingEnd="14dp"
+                android:paddingBottom="@dimen/size_5dp"
+                android:textColorHint="@color/app_dark_gray_1"
+                android:textSize="@dimen/text_16sp" />
+
+
+            <Button
+                style="@style/AppButton_Accent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/size_32dp"
+                android:minHeight="61dp"
+                android:text="@string/send"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

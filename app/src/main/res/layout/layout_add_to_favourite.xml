@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/size_20dp"
+    android:layout_marginEnd="@dimen/size_20dp"
+    android:background="#99000000">
+
+    <TextView
+        style="@style/AppText_Regular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/ivCross"
+        android:paddingStart="@dimen/margin_24dp"
+        android:paddingTop="@dimen/margin_12dp"
+        android:paddingEnd="@dimen/margin_24dp"
+        android:paddingBottom="@dimen/margin_12dp"
+        android:text="@string/added_to_favourite"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+    <ImageView
+        android:id="@+id/ivCross"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="@dimen/margin_24dp"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/ic_cross_white" />
+</RelativeLayout>

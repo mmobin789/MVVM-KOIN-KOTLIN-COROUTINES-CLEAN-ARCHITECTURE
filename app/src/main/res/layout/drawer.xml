@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    android:layoutDirection="rtl">
+
+    <ImageView
+        android:id="@+id/ivLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/size_21dp"
+        android:layout_marginTop="@dimen/margin_24dp"
+        android:layout_marginBottom="@dimen/size_30dp"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/ic_logo_splash_drawer"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/ivClose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_8dp"
+        android:layout_marginEnd="@dimen/margin_24dp"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/ic_close_white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/ivLogo" />
+
+    <ImageView
+        android:id="@+id/ivNotifications"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_8dp"
+        android:layout_marginEnd="@dimen/margin_24dp"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/ic_notification"
+        app:layout_constraintEnd_toStartOf="@id/ivClose"
+        app:layout_constraintTop_toTopOf="@id/ivLogo" />
+
+    <ImageView
+        android:id="@+id/ivLike"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_8dp"
+        android:layout_marginEnd="@dimen/margin_24dp"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/ic_like_drawer"
+        app:layout_constraintEnd_toStartOf="@id/ivNotifications"
+        app:layout_constraintTop_toTopOf="@id/ivLogo" />
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/margin_32dp"
+        android:layout_marginBottom="@dimen/margin_16dp"
+        app:layout_constraintBottom_toTopOf="@id/llSocial"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ivLogo">
+
+        <LinearLayout
+            android:id="@+id/ll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/size_21dp"
+            android:minWidth="@dimen/size_200dp"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/tvCategory"
+                style="@style/AppText_Bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/category_sections"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/text_15sp" />
+
+            <TextView
+                style="@style/AppText_Regular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/think_narrate"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_17sp" />
+
+            <TextView
+                style="@style/AppText_Regular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/places_evidence"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_17sp" />
+
+            <TextView
+                style="@style/AppText_Regular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/creations"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_17sp" />
+
+            <TextView
+                android:id="@+id/tvAuthor"
+                style="@style/AppText_Regular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/literature_writers"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_17sp" />
+
+            <TextView
+                style="@style/AppText_Regular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/art_string_feather"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_17sp" />
+
+            <TextView
+                style="@style/AppText_Regular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/under_the_spotlight"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_17sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/margin_12dp"
+                android:layout_marginBottom="@dimen/margin_12dp"
+                android:background="@color/colorPrimary" />
+
+            <TextView
+                android:id="@+id/tvAbout"
+                style="@style/AppText_Regular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/about_sharjah_cultural"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_17sp" />
+
+            <TextView
+                android:id="@+id/tvEditorial"
+                style="@style/AppText_Regular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/editorial_board"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_17sp" />
+
+            <TextView
+                android:id="@+id/tvMagazines"
+                style="@style/AppText_Regular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/magazine_archive"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_17sp" />
+
+            <TextView
+                android:id="@+id/tvDistribution"
+                style="@style/AppText_Regular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/distribution"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_17sp" />
+
+            <TextView
+                android:id="@+id/tvSubscription"
+                style="@style/AppText_Regular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/subscriptions"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_17sp" />
+
+            <TextView
+                android:id="@+id/tvContactUs"
+                style="@style/AppText_Regular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/call_us"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_17sp" />
+
+            <TextView
+                android:id="@+id/tvSettings"
+                style="@style/AppText_Regular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/settings"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_17sp" />
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/llSocial"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/size_21dp"
+        android:layout_marginBottom="@dimen/margin_32dp"
+        app:layout_constraintBottom_toTopOf="@id/tvLabel1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/ic_facebook" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_16dp"
+            android:layout_marginEnd="@dimen/margin_16dp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/ic_twitter" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/ic_instagram" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_16dp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/ic_youtube" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvLabel1"
+        style="@style/AppText_Regular"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_8dp"
+        android:gravity="center"
+        android:text="@string/copyright"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@id/bb"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/bb"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            style="@style/AppText_Bold"
+            android:layout_width="wrap_content"
+            android:layout_height="19dp"
+            android:layout_marginTop="@dimen/margin_12dp"
+            android:layout_marginBottom="@dimen/margin_12dp"
+            android:text="@string/more_apps"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_15sp" />
+
+        <ImageView
+            android:id="@+id/ivApp1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_12dp"
+            android:layout_marginTop="@dimen/margin_12dp"
+            android:layout_marginEnd="@dimen/margin_12dp"
+            android:layout_marginBottom="@dimen/margin_12dp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/i_books_copy_2" />
+
+        <ImageView
+            android:id="@+id/ivApp2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_12dp"
+            android:layout_marginBottom="@dimen/margin_12dp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/unnamed_copy" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,207 @@
+{
+  "project_info": {
+    "project_number": "224880152982",
+    "firebase_url": "https://mobin-b25c0.firebaseio.com",
+    "project_id": "mobin-b25c0",
+    "storage_bucket": "mobin-b25c0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:224880152982:android:f164116f735916de1c4db7",
+        "android_client_info": {
+          "package_name": "alshariqa.althaqafiya.magazine"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "224880152982-k42u2vlolof9o9sb3qdh7cammgdmmtf4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDsO-37mfPZhEuyRSYOtQDHHINqae0FT8M"
+        },
+        {
+          "current_key": "AIzaSyDLRCXrEngVOlpvlLp64IQDhAzYi9JyYEc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "224880152982-k42u2vlolof9o9sb3qdh7cammgdmmtf4.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "224880152982-9kqkl7n79tb1utvoil9nbiq50rr87squ.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.LocalStuff"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:224880152982:android:392fa6cdb15f880e1c4db7",
+        "android_client_info": {
+          "package_name": "com.app.customer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "224880152982-8rsnlef8s3i2pp5ffr2aqj6lmgi0tg7k.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.app.customer",
+            "certificate_hash": "7604afebfba83dfc6e97e33589b44eef5e1a5111"
+          }
+        },
+        {
+          "client_id": "224880152982-e9kfpdkc91721m4doe254c2ifdmln1rt.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.app.customer",
+            "certificate_hash": "a8bcd099c761ecbc1c817c3af9b8b9b9c3151e94"
+          }
+        },
+        {
+          "client_id": "224880152982-k42u2vlolof9o9sb3qdh7cammgdmmtf4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDsO-37mfPZhEuyRSYOtQDHHINqae0FT8M"
+        },
+        {
+          "current_key": "AIzaSyDLRCXrEngVOlpvlLp64IQDhAzYi9JyYEc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "224880152982-k42u2vlolof9o9sb3qdh7cammgdmmtf4.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "224880152982-9kqkl7n79tb1utvoil9nbiq50rr87squ.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.LocalStuff"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:224880152982:android:f9d371469f22550e1c4db7",
+        "android_client_info": {
+          "package_name": "com.app.driver"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "224880152982-i9ck7qb9ka4e7n3o34mrsnhhqql35sh0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.app.driver",
+            "certificate_hash": "a8bcd099c761ecbc1c817c3af9b8b9b9c3151e94"
+          }
+        },
+        {
+          "client_id": "224880152982-99t8oodm5csb8v7ac9cadqk95f4si16n.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.app.driver",
+            "certificate_hash": "7604afebfba83dfc6e97e33589b44eef5e1a5111"
+          }
+        },
+        {
+          "client_id": "224880152982-k42u2vlolof9o9sb3qdh7cammgdmmtf4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDsO-37mfPZhEuyRSYOtQDHHINqae0FT8M"
+        },
+        {
+          "current_key": "AIzaSyDLRCXrEngVOlpvlLp64IQDhAzYi9JyYEc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "224880152982-k42u2vlolof9o9sb3qdh7cammgdmmtf4.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "224880152982-9kqkl7n79tb1utvoil9nbiq50rr87squ.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.LocalStuff"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:224880152982:android:de333dad7ea04d1f1c4db7",
+        "android_client_info": {
+          "package_name": "com.magicbio.truename"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "224880152982-38d30k905ott4s752bvpco6jka0gk67k.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.magicbio.truename",
+            "certificate_hash": "7604afebfba83dfc6e97e33589b44eef5e1a5111"
+          }
+        },
+        {
+          "client_id": "224880152982-k42u2vlolof9o9sb3qdh7cammgdmmtf4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDsO-37mfPZhEuyRSYOtQDHHINqae0FT8M"
+        },
+        {
+          "current_key": "AIzaSyDLRCXrEngVOlpvlLp64IQDhAzYi9JyYEc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "224880152982-k42u2vlolof9o9sb3qdh7cammgdmmtf4.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "224880152982-9kqkl7n79tb1utvoil9nbiq50rr87squ.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.LocalStuff"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

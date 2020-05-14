@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/size_21dp"
+    android:layout_marginTop="@dimen/margin_24dp"
+    android:layout_marginEnd="@dimen/size_21dp"
+    android:layoutDirection="rtl">
+
+    <ImageView
+        android:id="@+id/ivAuthor"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="@dimen/margin_8dp"
+        android:contentDescription="@string/app_name"
+        tool:src="@drawable/ic_author_ph_circle" />
+
+    <TextView
+        android:id="@+id/tvName"
+        style="@style/AppText_Medium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_8dp"
+        android:layout_toEndOf="@+id/ivAuthor"
+        android:textColor="#a1a1a1"
+        android:textSize="18sp"
+        tool:text="سيدات القمر" />
+
+
+    <TextView
+        android:id="@+id/tvComment"
+        style="@style/AppText_Regular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvName"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="@dimen/margin_8dp"
+        android:layout_marginEnd="@dimen/margin_8dp"
+        android:layout_toEndOf="@+id/ivAuthor"
+        android:textAppearance="@style/TextAppearance.AppCompat.SearchResult.Subtitle"
+        android:textColor="@color/app_light_gray_1"
+        android:textSize="@dimen/text_16sp"
+        tool:text="ونكتفي بهذه الجوانب النقدية للعميد في تناولاته لشعراء زمانه، علماً أن الكتاب تناول شعراء ومفكّرين آخرين منهم: إيليا" />
+
+    <TextView
+        android:id="@+id/tvDate"
+        style="@style/AppText_Accent_Regular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvComment"
+        android:layout_marginStart="@dimen/margin_8dp"
+        android:layout_marginEnd="@dimen/margin_8dp"
+        android:layout_toEndOf="@+id/ivAuthor"
+        android:textSize="@dimen/text_16sp"
+        tool:text="Mar 25,2020" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_below="@id/tvDate"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:background="@color/app_light_gray_3" />
+
+</RelativeLayout>
+
+
+

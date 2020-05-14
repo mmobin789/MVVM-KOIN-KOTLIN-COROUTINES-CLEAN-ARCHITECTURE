@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/ivAuthor"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginEnd="@dimen/margin_8dp"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/ic_ph_author" />
+
+    <TextView
+        android:id="@+id/tvAuthor"
+        style="@style/AppText_Bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:text="@string/name"
+        android:textSize="@dimen/text_16sp" />
+
+    <TextView
+        android:id="@+id/tvArticle"
+        style="@style/AppText_Regular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/release"
+        android:textSize="@dimen/text_16sp" />
+</LinearLayout>
